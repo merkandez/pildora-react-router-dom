@@ -36,13 +36,7 @@ npm install react-router-dom`
 
 Vamos a crear los siguientes archivos y carpetas:
 
-/src/components/Navbar.js
-/src/components/Product.js
-/src/pages/Home.js
-/src/pages/About.js
-/src/pages/Contact.js
-/src/App.js
-/src/index.js
+/src ├── /components │ ├── Navbar.js │ └── Product.js ├── /pages │ ├── Home.js │ ├── About.js │ └── Contact.js ├── App.js └── index.js
 
 ## Crear Componentes y Páginas
 
