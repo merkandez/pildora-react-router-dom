@@ -1,4 +1,19 @@
-# Introducción a React Router DOM
+## Introducción a React Router DOM
+# React como aplicación de página única (SPA)
+
+Necesitamos entender cómo son renderizadas las páginas en una aplicación de React, una SPA (siglas en inglés para Single Page Application) para poder entender que es el enrutamiento y cómo este se relaciona con React.
+
+Cuando pulsas un enlace en el navegador, en aplicaciones con más de una página, es enviada una petición al servidor antes de que la página HTML se muestre.
+
+En React, el contenido de la página es creado a partir de nuestros componentes. Así que lo que hace React Router es interceptar la petición que se envía al servidor y luego inyectar el contenido dinámicamente desde los componentes que hemos creado.
+
+Esta es la idea general detrás de las SPA, que permiten que el contenido se muestre más rápido sin que la página sea actualizada.
+
+Cuando creas un nuevo proyecto, siempre verás un archivo index.html. Todo el código que escribas en tu componente App, que actúa como componente raíz, se renderiza en este archivo HTML. Esto significa que sólo hay un archivo HTML en el cual será renderizado tu código.  
+
+¿Qué ocurre cuando prefieres renderizar en una página distinta otro componente? ¿Creas un nuevo archivo HTML? La respuesta es no. React Router – como su nombre en inglés indica ('enrutador de React')– te ayudará a dirigirte a o navegar a un componente concreto, y te ayudará a renderizar tu nuevo componente en el archivo index.html.  
+
+Así que, en una aplicación de página única, cuando se navega a un nuevo componente utilizando React Router, el archivo index.html será reescrito en función de la lógica del componente.
 
 Este proyecto es una guía básica para entender y usar React Router DOM en una aplicación React. React Router DOM es una librería de enrutamiento que permite crear aplicaciones web de una sola página (SPA) que se comportan como aplicaciones de múltiples páginas.
 
