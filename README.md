@@ -1,7 +1,8 @@
-## Introducción a React Router DOM
-# React como aplicación de página única (SPA)
+# Introducción a React Router DOM
 
-Necesitamos entender cómo son renderizadas las páginas en una aplicación de React, una SPA (siglas en inglés para Single Page Application) para poder entender que es el enrutamiento y cómo este se relaciona con React.
+## React como aplicación de página única (SPA)
+
+Para poder entender que es el enrutamiento y cómo este se relaciona con React, Necesitamos entender cómo son renderizadas las páginas en una aplicación de React, una SPA (siglas en inglés para Single Page Application)
 
 Cuando pulsas un enlace en el navegador, en aplicaciones con más de una página, es enviada una petición al servidor antes de que la página HTML se muestre.
 
@@ -9,9 +10,9 @@ En React, el contenido de la página es creado a partir de nuestros componentes.
 
 Esta es la idea general detrás de las SPA, que permiten que el contenido se muestre más rápido sin que la página sea actualizada.
 
-Cuando creas un nuevo proyecto, siempre verás un archivo index.html. Todo el código que escribas en tu componente App, que actúa como componente raíz, se renderiza en este archivo HTML. Esto significa que sólo hay un archivo HTML en el cual será renderizado tu código.  
+Cuando creas un nuevo proyecto, siempre verás un archivo index.html. Todo el código que escribas en tu componente App, que actúa como componente raíz, se renderiza en este archivo HTML. Esto significa que sólo hay un archivo HTML en el cual será renderizado tu código.
 
-¿Qué ocurre cuando prefieres renderizar en una página distinta otro componente? ¿Creas un nuevo archivo HTML? La respuesta es no. React Router – como su nombre en inglés indica ('enrutador de React')– te ayudará a dirigirte a o navegar a un componente concreto, y te ayudará a renderizar tu nuevo componente en el archivo index.html.  
+¿Qué ocurre cuando prefieres renderizar en una página distinta otro componente? ¿Creas un nuevo archivo HTML? La respuesta es no. React Router – como su nombre en inglés indica ('enrutador de React')– te ayudará a dirigirte a o navegar a un componente concreto, y te ayudará a renderizar tu nuevo componente en el archivo index.html.
 
 Así que, en una aplicación de página única, cuando se navega a un nuevo componente utilizando React Router, el archivo index.html será reescrito en función de la lógica del componente.
 
@@ -46,7 +47,6 @@ npm install react-router-dom`
 
 ```
 
-
 ## Estructura del Proyecto
 
 Vamos a crear los siguientes archivos y carpetas:
@@ -56,7 +56,9 @@ Vamos a crear los siguientes archivos y carpetas:
 ## Crear Componentes y Páginas
 
 # Navbar.js
+
 Este es el Navbar que se visualizará en todas las páginas.
+
 ```bash
 // src/components/Navbar.js
 import React from 'react';
@@ -78,7 +80,9 @@ function Navbar() {
 
 export default Navbar;
 ```
+
 # Product.js
+
 El componente Product utiliza useParams para obtener el productId de la URL y mostrarlo.
 
 ```bash
@@ -99,7 +103,9 @@ export default Product;
 ```
 
 # Home.js
+
 La página principal (Home).
+
 ```bash
 // src/pages/Home.js
 import React from 'react';
@@ -112,6 +118,7 @@ export default Home;
 ```
 
 # About.js
+
 ```bash
 // src/pages/About.js
 import React from 'react';
@@ -124,6 +131,7 @@ export default About;
 ```
 
 # Contact.js
+
 ```bash
 // src/pages/Contact.js
 import React from 'react';
@@ -136,6 +144,7 @@ export default Contact;
 ```
 
 # App.js
+
 ```bash
 // src/App.js
 import React from 'react';
@@ -187,6 +196,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>
 );
 ```
+
 ## Ejecuta la aplicación
 
 Inicializamos la aplicación con
